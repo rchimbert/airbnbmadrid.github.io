@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>Airbnb Madrid</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Airbnb Madrid</a>
+					</header>
+					<!-- Nav -->
+<nav id="nav">
+	<ul class="icons">
+		<li><a href="https://www.linkedin.com/in/romain-chimbert-988448201/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+		<li><a href="https://github.com/rchimbert" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+	</ul>
+</nav>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Project<br />
+									explanation</h1>
+								</header>
+
+								<!-- Text stuff -->
+								<h2>Project overview</h2>
+								<span class="image fit"><img src="images/airbnb dashboard preview.png" alt="" /></span>
+								This end-to-end project consists in <b>gathering some statistics about every airbnb available to rent in Madrid</b>. I used a kaggle dataset 
+								gathering informations about every flat such as the number of rooms, localisation, reviews, price...etc. I got <b>more insight </b>about this 
+								dataset thanks to some <b>data cleaning and analysis with python</b>. Then I analysed the <b>attributes impacting the price and the rating</b>. Finally, I used 
+								SQL to write some more queries in order to fill an <b>interactive Tableau dashboard </b>summarizing the information from the dataset. 
+								<hr />
+								<h2>Data gathering, cleaning and analysis with python</h2>
+									First, I gathered some data thanks to a kaggle dataset about Airbnb in Madrid (<a href="https://www.kaggle.com/datasets/rusiano/madrid-airbnb-data">The dataset</a>, I used the listing.csv only).
+									Then I <b>cleaned everything thanks to the pandas library and I analysed </b>the data to answer some questions about the airbnb available in Madrid. I have also studied the <b>impact of somes attributes </b>that affects the price or the flat rating. This step is detailed on this commented code 
+									available on my Github: <a href="https://github.com/rchimbert/Airbnb-Madrid/blob/main/data_cleaning_analysis_airbnb.ipynb">The code</a>.</p>
+									<hr />
+										<h2>Creation of SQL table and filling them with the data rows</h2>
+										I first created the structures of the table used for the SQL request.  
+										This step is detailed on this code 
+									available on my Github: <a href="https://github.com/rchimbert/Airbnb-Madrid/blob/main/Table_structure_airbnb.pgsql">The code</a>.</p>
+									Finally, in order to fill those tables created with all the rows available very quickly, I just run this line of code on the <b>postgreSQL
+									shell.</b>  
+									<span class="image fit"><img src="images/screen_rbnb.png" alt="" /></span>
+									<hr />
+									<h2>SQL queries in order to fill the Tableau Dashboard with statistics</h2>
+									To get some more insight, I created several SQL queries on postgreSQL to be shown then in a <b>Tableau Dashboard</b>.
+									This step is detailed on this code 
+									available on my Github: <a href="https://github.com/rchimbert/Airbnb-Madrid/blob/main/Select_queries_airbnb.pgsql">The code</a>.</p>
+									<hr />
+									<h2>Tableau dashboard visual</h2>
+									Finally, I was able to create a visual available on my Tableau Public profile. On this dashboard, we can<b> select a neighbourhood group </b>and it displays on a map every flat available with 
+									their main attributes, and the average price and rating of every neighbourhood in this neighbourhood group. <b>By clicking on a certain neighbourhood average price bar </b>on the average price bar chart, we can<b> filter 
+									on the map</b> to have only this special neighbourhood flats displayed on screen (<b>Average price graph work as a filter</b>). We can also filter the flat on the map by <b>clicking on a certain roomtype or a bedroom number </b>as those graph work as filter as well.
+									This interactive visual is available here on my Tableau Public profile (note: if you are on laptop think about ticking the option of displaying the dashboard as on a desktop at the bottom): <a href="https://public.tableau.com/app/profile/romain.chimbert/viz/rbnbMadrid/Dashboard1">The dashboard</a>.</p>
+
+	
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
